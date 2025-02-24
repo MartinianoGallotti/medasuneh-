@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medasuneh?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-no {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+            .btn-no:hover {
+                background-color: #c0392b;
+            }
+
+        .btn-eh {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+            .btn-eh:hover {
+                background-color: #27ae60;
+            }
+    </style>
+</head>
+<body>
+    <h1>Medasuneh?</h1>
+    <div class="container">
+        <button class="btn-no" onclick="irAPagina('no.html')">No</button>
+        <button class="btn-eh" onclick="irAPagina('eh.html')">Eh?</button>
+    </div>
+
+    <script>
+        function irAPagina(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+</body>
+</html>
